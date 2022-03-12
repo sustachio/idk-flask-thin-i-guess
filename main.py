@@ -19,9 +19,13 @@ def startup():
 
 @app.route("/")
 def home():
-  db.create_all()
   return render_template("index.html")
-  
+
+@app.route("/make")
+def make():
+  db.create_all()
+  return "made"
+
 if __name__ == '__main__':
   startup()
   app.run(debug=True, host='0.0.0.0', port=8089)

@@ -7,11 +7,25 @@
   <title>Document</title>
 </head>
 <body>
-  <h1>it works</h1>
+  <h1>register:</h1>
   <form action="/auth/register" method="POST">
 
     <input type="text" name="username" required>
     <input type="password" name="password" required>
+    <input type="submit" name="submit">
+    
+  </form>
+  <h1>login:</h1>
+  <form action="/auth/login" method="POST">
+
+    <input type="text" name="username" required>
+    <input type="password" name="password" required>
+    <input type="submit" name="submit">
+    
+  </form>
+  <h1>logout:</h1>
+  <form action="/auth/logout" method="POST">
+
     <input type="submit" name="submit">
     
   </form>

@@ -1,0 +1,2 @@
+language = "bash"
+run = "pip install flask_sqlalchemy;pip install flask_login;python main.py"
